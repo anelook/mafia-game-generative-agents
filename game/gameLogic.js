@@ -1,6 +1,6 @@
 import { Mafia } from "../agents/mafia.js";
 import { Villager } from "../agents/villager.js";
-import { clean, pause, mostFrequentItems } from "../utils.js";
+import { clean, pause, mostFrequentItems } from "../helpers/utils.js";
 import {GameState} from "./gameState.js";
 
 export class GameLogic {

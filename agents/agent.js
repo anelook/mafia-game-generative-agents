@@ -1,4 +1,4 @@
-import {getStream} from "../utils.js";
+import {getStream} from "../helpers/utils.js";
 
 export class Agent {
     constructor(traits, name, role, gameDescription, opinionPrompt, votePrompt, gameState) {
