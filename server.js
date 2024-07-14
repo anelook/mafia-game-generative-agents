@@ -4,7 +4,7 @@ import {Server} from 'socket.io';
 import cors from 'cors';
 import {fileURLToPath} from 'node:url';
 import {dirname, join} from 'node:path';
-import {play} from './play.js';
+import {play} from './game/play.js';
 
 
 const app = express();
@@ -12,7 +12,7 @@ const server = createServer(app);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.get('/', (req, res) => {
-    res.sendFile(join(__dirname, 'index.html'));
+    res.sendFile(join(__dirname, 'frontend/index.html'));
 });
 
 const io = new Server(server);

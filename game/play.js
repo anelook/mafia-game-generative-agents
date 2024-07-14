@@ -1,6 +1,6 @@
-import { GameLogic } from "./game/gameLogic.js";
-import { UIHandler } from "./uiHandler.js";
-import {GameState} from "./game/gameState.js";
+import { GameLogic } from "./gameLogic.js";
+import { UIHandler } from "../frontend/uiHandler.js";
+import {GameState} from "./gameState.js";
 
 const agents = [
     { role: 'mafia', name: 'Vincent', traits: 'charming, persuasive, strategic' },
