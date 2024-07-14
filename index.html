@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="main-container">
+    <div class="main-panel">
+        <div class="game-state">
+            <div class="game-state-left">
+                Alive villagers: <span id="alive-villagers"></span><br />
+                Killed villagers: <span id="killed-villagers"></span><br />
+            </div>
+            <div class="game-state-right" id="time-of-day">
+            </div>
+        </div>
+        <div id="what-is-happening"></div>
+        <div id="container-with-players"></div>
+    </div>
+    <div class="prompts-container">
+        <div>Current prompt:<br /></div>
+        <div id="prompts" />
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

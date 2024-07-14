@@ -1,0 +1,122 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #001122;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+#main-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-panel {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.game-state {
+    background-color: #0f192e;
+}
+
+
+.game-state, #what-is-happening, .prompts-container, .agent {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color: #cbcbcb;
+    padding: 12px;
+}
+
+#what-is-happening {
+    background-color: #14213d;
+    font-size: x-small;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+#prompts {
+    font-size: x-small;
+    overflow-y: scroll;
+    display: block;
+    white-space: pre-wrap;
+}
+
+.prompts-container {
+    flex: 1;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a111f;
+}
+
+.game-state-left {
+    font-size: x-small;
+    flex:2;
+}
+
+.game-state-right{
+    font-size: x-large;
+}
+
+#container-with-players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    gap: 1px;
+}
+
+.name-action-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.agent {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c263c;
+    flex-grow: 1;
+
+}
+
+.agent.killed {
+    background-color: #3e3e4e;
+    color: #999;
+}
+
+.agent .name {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+    color: #76ABAE;
+}
+
+.agent .thought {
+    font-style: italic;
+    color: #a9a9b2;
+    font-size: small;
+    margin-bottom: 10px;
+    white-space: pre-wrap
+}
+
+.agent .action {
+    font-size: large;
+}
+
+.agent .thought,
+.agent .speech,
+.agent .vote {
+    margin-bottom: 10px;
+    font-size: x-small;
+}
+
+.agent .label {
+    font-weight: bold;
+}
+
